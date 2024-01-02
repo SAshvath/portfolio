@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;;
+    color: #ffff;
+}
+#header{
+    width:100%;
+    height: 100vh;
+    
+}
+.bgimg{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+
+}
+#cap{
+    color: red;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100px;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+
+}
+
+.info{
+    color: white;
+    margin-left: 100px;
+
+    
+}
+
+.info h1:nth-child(2){
+    font-size: 80px;
+}
+
+.profile img{
+     filter: brightness(90%);
+     border-radius: 50%;
+     filter: drop-shadow(0 0 3rem rgb(66, 62, 62));
+     width: 65%;
+     margin-left: 100px;
+}
+
+.main{
+    display: flex;
+  
+    justify-content:space-between ;
+    align-items: center;
+  
+}
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.7rem;
+}
+
+.social a {
+    color: white;
+    font-size: 1rem;
+    border: 1.6px solid white;
+    border-radius: 20%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.social a:hover {
+    color: #1F252E;
+    background-color: rgb(255, 77, 77);
+    box-shadow: 0 0 20px red;
+    transition: all .3s ease-in-out;
+}
+
+/* ==================================about================== */
+#about{
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+    padding:10% 20%;
+    background-color:black;  
+      
+}
+#about h1{
+    margin-bottom: 35px;
+}
+#about hr{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#about p{
+    font-size: large;
+    font-weight:lighter;
+}
+/* ================================skills================ */
+
+#skills{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    height: 70vh;
+    padding-top: 10%;
+}
+.skill{
+    display: inline-block;
+    margin: 15px;
+}
+
+.skill img{
+    width:100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+#skills h1{
+    font-size: 35px;
+}
+/* ==============================projects======================== */
+#projects{
+    height:120vh flex;
+}
+#projects h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#colo{
+    font-weight: 400;
+    font-style: bold;
+    color: red;
+}
+#projects h2{
+    margin-top: 20px;
+font-size:20px;
+font-weight: 100;
+    text-align: center;
+    
+}
+.matlabimg img{
+width: 350px;
+}
+.project{
+    display: flex;
+    margin: 0% 20%;
+}
+.project p{
+    text-align: justify;
+}
+.projectinfo p{
+    margin-top: 20px;
+    line-height: 1.5;
+   
+}
+.readmore{
+    text-align: justify;
+    line-height: 1.5;
+    display: none;
+    transition: 2s ease-out;
+
+}
+#check{
+    display: none;
+}
+
+label{
+    display: inline-block;
+margin-top: 20px;
+text-decoration: underline;
+color: red;
+cursor: pointer;
+
+    
+}
+#check:checked ~ .readmore{
+    display: block;
+}
+#check:checked ~ label{
+    visibility: hidden;
+}
+#check:checked ~label:after{
+    content: 'show Less';
+    display: block;
+    visibility: visible;
+}
+.matlabimg{
+    margin-right: 50px;
+}
+/* ==========================================contact======================================== */
+.contact{
+    text-align: center;
+   padding-top: 10%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contact-right form{
+     width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    
+    
+}
+.btn{
+    width: 30%;
+    line-height: 40px;
+    background-color: red;
+    color: white;
+}
+.contact-left{
+    padding: 20px;
+    margin: 15px;
+}
+.contact-left p{
+    margin-top: 15px;
+}
+#msg{
+    color:greenyellow;
+    margin-bottom: 10%;
+    margin-top: 10px;
+    display: block;
+    transition: ease-in-out;
+}
+.contact-left a {
+    color: red;
+}
+/* ========================css for small screen======================= */
+@media only screen and (max-width:600px){
+
+}
+
+
+
